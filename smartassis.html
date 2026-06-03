@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Campus Assistance Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Smart Campus Assistance Platform</h1>
+
+  <!-- Service Assistance -->
+  <div class="card">
+    <h2>Service Assistance</h2>
+    <select id="serviceSelect">
+      <option value="library">Library</option>
+      <option value="office">Office</option>
+      <option value="lab">Lab</option>
+    </select>
+    <button onclick="checkStatus()">Check Status</button>
+    <p id="statusResult"></p>
+  </div>
+
+  <!-- Emergency Support -->
+  <div class="card emergency">
+    <h2>Emergency Support</h2>
+    <button onclick="sendEmergency()">🚨 Emergency Alert</button>
+    <p id="emergencyMsg"></p>
+  </div>
+
+  <!-- Campus Notices -->
+  <div class="card">
+    <h2>Campus Notices</h2>
+    <button onclick="loadNotice()">Load Today’s Notice</button>
+    <p id="noticeText"></p>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
